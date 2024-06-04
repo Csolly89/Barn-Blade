@@ -1,231 +1,67 @@
-Install Tailwind, heroIcons, React-router, env, emailJs, Animations
-    Name: Barn & Blade Butchers
+// Install Tailwind, heroIcons, React-router, env, emailJs, Animations
+//     Name: Barn & Blade Butchers
 
+//     Flow chart--
+//         Home - 
+//             Navbar
+//             Hero Header
+//             Features list section
+//             Services section
+//             Benefits (highlights benefits of purchasing local butcher shop like freshness,quality and supporting local farmers)
+//             Testimonials
+//             footer
 
-    Flow chart--
-        Home - 
-            Navbar
-            Hero Header
-            Features list section
-            Services section
-            Benefits (highlights benefits of purchasing local butcher shop like freshness,quality and supporting local farmers)
-            Testimonials
-            footer
+//         About
+//         Products - Product pages
 
-        About
-        Products - Product pages
+//         Blog - Blog Products
 
-        Blog - Blog Products
-
-        Contact
+//         Contact
     
-    Fonts--
-        Headers:
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); 
-        font-family: "Cormorant Infant", serif 
+//     Fonts--
+//         Headers:
+//         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); 
+//         font-family: "Cormorant Infant", serif 
 
-        Titles / Secondary:
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-         font-family: "Quicksand", sans-serif;
+//         Titles / Secondary:
+//         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+//          font-family: "Quicksand", sans-serif;
 
-         Paragraphs:
-         @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
-         font-family: "Biryani", sans-serif;
+//          Paragraphs:
+//          @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+//          font-family: "Biryani", sans-serif;
 
-    Colors--
-        Tailwind.config
-            colors: {
-            'text': {
-            50: 'rgb(var(--text-50))',
-            100: 'rgb(var(--text-100))',
-            200: 'rgb(var(--text-200))',
-            300: 'rgb(var(--text-300))',
-            400: 'rgb(var(--text-400))',
-            500: 'rgb(var(--text-500))',
-            600: 'rgb(var(--text-600))',
-            700: 'rgb(var(--text-700))',
-            800: 'rgb(var(--text-800))',
-            900: 'rgb(var(--text-900))',
-            950: 'rgb(var(--text-950))',
-            },
-            'background': {
-            50: 'rgb(var(--background-50))',
-            100: 'rgb(var(--background-100))',
-            200: 'rgb(var(--background-200))',
-            300: 'rgb(var(--background-300))',
-            400: 'rgb(var(--background-400))',
-            500: 'rgb(var(--background-500))',
-            600: 'rgb(var(--background-600))',
-            700: 'rgb(var(--background-700))',
-            800: 'rgb(var(--background-800))',
-            900: 'rgb(var(--background-900))',
-            950: 'rgb(var(--background-950))',
-            },
-            'primary': {
-            50: 'rgb(var(--primary-50))',
-            100: 'rgb(var(--primary-100))',
-            200: 'rgb(var(--primary-200))',
-            300: 'rgb(var(--primary-300))',
-            400: 'rgb(var(--primary-400))',
-            500: 'rgb(var(--primary-500))',
-            600: 'rgb(var(--primary-600))',
-            700: 'rgb(var(--primary-700))',
-            800: 'rgb(var(--primary-800))',
-            900: 'rgb(var(--primary-900))',
-            950: 'rgb(var(--primary-950))',
-            },
-            'secondary': {
-            50: 'rgb(var(--secondary-50))',
-            100: 'rgb(var(--secondary-100))',
-            200: 'rgb(var(--secondary-200))',
-            300: 'rgb(var(--secondary-300))',
-            400: 'rgb(var(--secondary-400))',
-            500: 'rgb(var(--secondary-500))',
-            600: 'rgb(var(--secondary-600))',
-            700: 'rgb(var(--secondary-700))',
-            800: 'rgb(var(--secondary-800))',
-            900: 'rgb(var(--secondary-900))',
-            950: 'rgb(var(--secondary-950))',
-            },
-            'accent': {
-            50: 'rgb(var(--accent-50))',
-            100: 'rgb(var(--accent-100))',
-            200: 'rgb(var(--accent-200))',
-            300: 'rgb(var(--accent-300))',
-            400: 'rgb(var(--accent-400))',
-            500: 'rgb(var(--accent-500))',
-            600: 'rgb(var(--accent-600))',
-            700: 'rgb(var(--accent-700))',
-            800: 'rgb(var(--accent-800))',
-            900: 'rgb(var(--accent-900))',
-            950: 'rgb(var(--accent-950))',
-            },
-            },
+//     Colors--
+//     Gradients:
+//     --linearPrimarySecondary: linear-gradient(#4e453c, #b7bda8);
+// --linearPrimaryAccent: linear-gradient(#4e453c, #768c69);
+// --linearSecondaryAccent: linear-gradient(#b7bda8, #768c69);
+// --radialPrimarySecondary: radial-gradient(#4e453c, #b7bda8);
+// --radialPrimaryAccent: radial-gradient(#4e453c, #768c69);
+// --radialSecondaryAccent: radial-gradient(#b7bda8, #768c69);
+    
 
-        main.css
-            @layer base {
-            :root {
-                --text-50: 240 242 244;
-                --text-100: 225 228 234;
-                --text-200: 195 201 213;
-                --text-300: 165 174 192;
-                --text-400: 136 147 170;
-                --text-500: 106 120 149;
-                --text-600: 85 96 119;
-                --text-700: 63 72 90;
-                --text-800: 42 48 60;
-                --text-900: 21 24 30;
-                --text-950: 11 12 15;
-                
-                --background-50: 239 242 245;
-                --background-100: 224 229 235;
-                --background-200: 192 202 216;
-                --background-300: 161 176 196;
-                --background-400: 130 150 176;
-                --background-500: 98 124 157;
-                --background-600: 79 99 125;
-                --background-700: 59 74 94;
-                --background-800: 39 49 63;
-                --background-900: 20 25 31;
-                --background-950: 10 12 16;
-                
-                --primary-50: 240 242 245;
-                --primary-100: 225 229 234;
-                --primary-200: 194 203 214;
-                --primary-300: 164 178 193;
-                --primary-400: 134 152 172;
-                --primary-500: 103 126 152;
-                --primary-600: 83 101 121;
-                --primary-700: 62 76 91;
-                --primary-800: 41 50 61;
-                --primary-900: 21 25 30;
-                --primary-950: 10 13 15;
-                
-                --secondary-50: 245 241 240;
-                --secondary-100: 235 227 224;
-                --secondary-200: 214 200 194;
-                --secondary-300: 194 172 163;
-                --secondary-400: 173 144 133;
-                --secondary-500: 153 116 102;
-                --secondary-600: 122 93 82;
-                --secondary-700: 92 70 61;
-                --secondary-800: 61 47 41;
-                --secondary-900: 31 23 20;
-                --secondary-950: 15 12 10;
-                
-                --accent-50: 243 245 240;
-                --accent-100: 231 234 225;
-                --accent-200: 208 214 194;
-                --accent-300: 184 193 164;
-                --accent-400: 161 172 134;
-                --accent-500: 137 152 103;
-                --accent-600: 110 121 83;
-                --accent-700: 82 91 62;
-                --accent-800: 55 61 41;
-                --accent-900: 27 30 21;
-                --accent-950: 14 15 10;
-                
-            }
-            .dark {
-                --text-50: 10 12 15;
-                --text-100: 21 24 30;
-                --text-200: 42 48 60;
-                --text-300: 63 72 90;
-                --text-400: 84 96 120;
-                --text-500: 105 120 150;
-                --text-600: 135 147 171;
-                --text-700: 165 174 192;
-                --text-800: 195 201 213;
-                --text-900: 225 228 234;
-                --text-950: 240 241 245;
-                
-                --background-50: 10 12 15;
-                --background-100: 20 25 31;
-                --background-200: 40 50 62;
-                --background-300: 60 74 93;
-                --background-400: 81 99 123;
-                --background-500: 101 124 154;
-                --background-600: 132 150 174;
-                --background-700: 162 176 195;
-                --background-800: 193 203 215;
-                --background-900: 224 229 235;
-                --background-950: 240 242 245;
-                
-                --primary-50: 10 13 15;
-                --primary-100: 21 25 30;
-                --primary-200: 41 50 61;
-                --primary-300: 62 76 91;
-                --primary-400: 83 101 121;
-                --primary-500: 103 126 152;
-                --primary-600: 134 152 172;
-                --primary-700: 164 178 193;
-                --primary-800: 194 203 214;
-                --primary-900: 225 229 234;
-                --primary-950: 240 242 245;
-                
-                --secondary-50: 15 12 10;
-                --secondary-100: 31 23 20;
-                --secondary-200: 61 47 41;
-                --secondary-300: 92 70 61;
-                --secondary-400: 122 94 82;
-                --secondary-500: 153 117 102;
-                --secondary-600: 173 145 133;
-                --secondary-700: 194 172 163;
-                --secondary-800: 214 200 194;
-                --secondary-900: 235 227 224;
-                --secondary-950: 245 241 240;
-                
-                --accent-50: 14 15 10;
-                --accent-100: 27 30 21;
-                --accent-200: 55 61 41;
-                --accent-300: 82 91 62;
-                --accent-400: 110 121 83;
-                --accent-500: 137 152 103;
-                --accent-600: 161 172 134;
-                --accent-700: 184 193 164;
-                --accent-800: 208 214 194;
-                --accent-900: 231 234 225;
-                --accent-950: 243 245 240;
-                
-            }
-            },
+//     Tailwind.config
+//     colors: {
+//  'text': 'var(--text)',
+//  'background': 'var(--background)',
+//  'primary': 'var(--primary)',
+//  'secondary': 'var(--secondary)',
+//  'accent': 'var(--accent)',
+// },
+//            @layer base {
+                // :root {
+                //     --text: #1d1a16;
+                //     --background: #f8f7f6;
+                //     --primary: #4e453c;
+                //     --secondary: #b7bda8;
+                //     --accent: #768c69;
+                // }
+                // .dark {
+                //     --text: #e9e6e2;
+                //     --background: #090807;
+                //     --primary: #c3bab1;
+                //     --secondary: #515742;
+                //     --accent: #809673;
+                // }
+                // },
